@@ -8,7 +8,7 @@ app = Flask(__name__)
 # and assign route of no path ('/')
 @app.route("/")
 def home():
-    return 'This is home page for no path, <h1> Welcome Home</h1>' 
+    return 'This is home page for no path, <h3> Welcome Home</h3>' 
 
 
 
@@ -31,7 +31,7 @@ def error():
 # and assign to the route of ('/admin')
 @app.route("/admin")
 def admin():
-    return redirect(url_for('error'))
+    return redirect(url_for('about'))
 
 
 # Create a function named greet which return formatted inline html string 
